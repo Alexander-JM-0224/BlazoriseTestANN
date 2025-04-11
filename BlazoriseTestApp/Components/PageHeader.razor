@@ -1,0 +1,26 @@
+﻿@inject PageHeaderState HeaderState;
+
+<div class="page-header">
+    <div class="header-brand">
+        <img src="jama_logo.svg" style="width:40px; height: 50px" />
+        <h6>VanManager</h6>
+    </div>
+    <div class="page-title">
+        <h4 class="m-0">@HeaderState.Title</h4>
+    </div>
+    <div class="page-actions">
+        @HeaderState.Actions
+    </div>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        HeaderState.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        HeaderState.OnChange -= StateHasChanged;
+    }
+}
