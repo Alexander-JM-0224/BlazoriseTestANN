@@ -1,6 +1,7 @@
 ﻿@using BlazoriseTestApp.Components
 @inherits LayoutComponentBase
 
+@* Example 1 *@
 @* I want this layout, but this introduces a scrollbar for the height of the header, this seems buggy. Should not be needed. Is never documented and not the wanted result. *@
 <LayoutHeader Fixed>
     <PageHeader />
@@ -19,6 +20,7 @@
     </Layout>
 </Layout>
 
+@* Example 2 *@
 @* According to your documentation this would be the "Sider with header on top" but it is not, the top example comes closer to the result we want. *@
 @* <Layout>
     <LayoutHeader Fixed>
@@ -38,6 +40,7 @@
     </Layout>
 </Layout> *@
 
+@* Example 3 *@
 @* This should represent a layout with sider as per your documentation, and it is. But not what we want. BUT this piece of documentation is correct at least. *@
 @* <Layout Sider>
     <LayoutSider>
