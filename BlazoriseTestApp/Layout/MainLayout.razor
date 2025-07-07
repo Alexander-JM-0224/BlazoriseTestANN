@@ -3,22 +3,22 @@
 
 @* Example 1 *@
 @* I want this layout, but this introduces a scrollbar for the height of the header, this seems buggy. Should not be needed. Is never documented and not the wanted result. *@
-<LayoutHeader Fixed>
-    <PageHeader />
-</LayoutHeader>
-<Layout>
-    <Layout Sider>
-        <LayoutSider>
-            <LayoutSiderContent>
-                <NavMenu />
-            </LayoutSiderContent>
-        </LayoutSider>
-
-        <LayoutContent>
-            @Body
-        </LayoutContent>
-    </Layout>
-</Layout>
+@* <LayoutHeader Fixed> *@
+@*     <PageHeader /> *@
+@* </LayoutHeader> *@
+@* <Layout> *@
+@*     <Layout Sider> *@
+@*         <LayoutSider> *@
+@*             <LayoutSiderContent> *@
+@*                 <NavMenu /> *@
+@*             </LayoutSiderContent> *@
+@*         </LayoutSider> *@
+@* *@
+@*         <LayoutContent> *@
+@*             @Body *@
+@*         </LayoutContent> *@
+@*     </Layout> *@
+@* </Layout> *@
 
 @* Example 2 *@
 @* According to your documentation this would be the "Sider with header on top" but it is not, the top example comes closer to the result we want. *@
@@ -42,7 +42,7 @@
 
 @* Example 3 *@
 @* This should represent a layout with sider as per your documentation, and it is. But not what we want. BUT this piece of documentation is correct at least. *@
-@* <Layout Sider>
+<Layout Sider>
     <LayoutSider>
         <LayoutSiderContent>
             <NavMenu />
@@ -56,4 +56,4 @@
             @Body
         </LayoutContent>
     </Layout>
-</Layout> *@
+</Layout> 
